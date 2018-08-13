@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    ol,li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .tabs {
+      height: 200px;
+      width: 400px;
+      margin: 0 auto;
+    }
+  
+    .tabs-bar {
+      display: flex;
+  
+    }
+  
+    .tabs-bar>li {
+      flex: 1;
+      text-align: center;
+      padding: 4px 8px;
+      border-bottom: 3px solid #46a1de;
+      cursor: pointer;
+    }
+  
+    .tabs-content {
+      height: 100%;
+      border-bottom: 3px solid #46a1de;
+      border-right: 3px solid #46a1de;
+      border-left: 3px solid #46a1de;
+    }
+  
+    .tabs-bar>li:hover {
+      border-bottom: 0;
+      border-top: 2px solid #46a1de;
+      border-right: 3px solid #46a1de;
+      border-left: 3px solid #46a1de;
+      background-color: rgba(255, 255, 255, .3);
+      transition: all .3s;
+    }
+  
+    .tabs-bar .active {
+      border-bottom: 0;
+      border-top: 2px solid #46a1de;
+      border-right: 3px solid #46a1de;
+      border-left: 3px solid #46a1de;
+      background-color: rgba(255, 255, 255, .3);
+      transition: all .3s;
+    }
+  
+    .tabs-content>li {
+      display: none;
+    }
+  
+    .tabs-content>li.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs xxx">
+    <ol class="tabs-bar">
+      <li>Home</li>
+      <li>Help</li>
+      <li>About</li>
+    </ol>
+    <ol class="tabs-content">
+      <li>content 1</li>
+      <li>content 2</li>
+      <li>content 3</li>
+    </ol>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="tab.js"></script>
+</body>
+</html>
